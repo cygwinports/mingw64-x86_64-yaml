@@ -2,7 +2,7 @@ CROSS_HOST="x86_64-w64-mingw32"
 inherit cross
 
 NAME="mingw64-x86_64-yaml"
-VERSION=0.1.4
+VERSION=0.1.6
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="YAML 1.1 parser library for Win64 toolchain"
@@ -11,8 +11,5 @@ HOMEPAGE="http://pyyaml.org/wiki/LibYAML"
 SRC_URI="http://pyyaml.org/download/libyaml/yaml-${VERSION}.tar.gz"
 SRC_DIR="yaml-${VERSION}"
 PATCH_URI="
-	http://pkgs.fedoraproject.org/cgit/libyaml.git/plain/libyaml-CVE-2013-6393-string-overflow.patch
-	http://pkgs.fedoraproject.org/cgit/libyaml.git/plain/libyaml-CVE-2013-6393-node-id-hardening.patch
-	http://pkgs.fedoraproject.org/cgit/libyaml.git/plain/libyaml-CVE-2013-6393-indent-column-overflow-v2.patch
 	0.1.4-dllexport.patch
 "
